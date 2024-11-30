@@ -1,0 +1,65 @@
+/* General Styling for the Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Hover and Focus Effects for Inputs */
+form input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Submit Button Styling */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add Some Margin Around the Container */
+div {
+    margin: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    form input[type="text"],
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
